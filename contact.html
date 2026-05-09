@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact</title>
 </head>
 <body>
 
@@ -15,99 +15,138 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><strong>Contact</strong></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <form>
+        <section>
 
-            <fieldset>
-                <legend>Personal Information</legend>
+            <h2>Send a Message</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone:</label><br>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                        >
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+
+                    <p>
+                        <label for="subject">Subject:</label><br>
+
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label><br>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            cols="40"
+                            minlength="50"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+                    </p>
+
+                </fieldset>
+
+                <br>
 
                 <p>
-                    <label for="fullname">Full Name:</label><br>
-                    <input
-                        type="text"
-                        id="fullname"
-                        name="fullname"
-                        placeholder="Enter your full name"
-                        required
-                    >
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Subscribe to newsletter
+                    </label>
                 </p>
 
                 <p>
-                    <label for="email">Email:</label><br>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                    >
+                    <button type="submit">Send Message</button>
                 </p>
 
-                <p>
-                    <label for="phone">Phone:</label><br>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Enter your phone number"
-                    >
-                </p>
+            </form>
 
-            </fieldset>
+        </section>
 
-            <br>
+        <section>
+            <h2>Social Media</h2>
 
-            <fieldset>
-                <legend>Message Details</legend>
+            <ul>
+                <li>
+                    <a href="https://github.com/" target="_blank">
+                        GitHub
+                    </a>
+                </li>
 
-                <p>
-                    <label for="subject">Subject:</label><br>
+                <li>
+                    <a href="https://linkedin.com/" target="_blank">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-                    <select id="subject" name="subject">
-                        <option value="general">General Inquiry</option>
-                        <option value="support">Support</option>
-                        <option value="feedback">Feedback</option>
-                    </select>
-                </p>
+        <section>
+            <h2>Location</h2>
 
-                <p>
-                    <label for="message">Message:</label><br>
+            <p>Nairobi, Kenya</p>
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        cols="40"
-                        minlength="50"
-                        placeholder="Write your message here..."
-                        required
-                    ></textarea>
-                </p>
-
-            </fieldset>
-
-            <br>
-
-            <p>
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Subscribe to newsletter
-                </label>
-            </p>
-
-            <p>
-                <button type="submit">Send Message</button>
-            </p>
-
-        </form>
+            <p>Timezone: East Africa Time (EAT)</p>
+        </section>
 
     </main>
+
+    <footer>
+        <p>© 2026 Your Name</p>
+    </footer>
 
 </body>
 </html>
